@@ -1,0 +1,7 @@
+version: '3'
+services:
+    py_gtrend:
+        build: .
+        volumes:
+            - $PWD/dev:/root/dev
+        tty: true
