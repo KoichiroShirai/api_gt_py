@@ -1,7 +1,6 @@
 FROM python:slim
 USER root
 SHELL ["/bin/bash", "-c"]
-RUN mkdir /root/dev
 WORKDIR /root/dev
 COPY requirements.txt /root/dev
 RUN apt-get update \
