@@ -2,7 +2,8 @@
 from pytrends.request import TrendReq
 pytrends = TrendReq(hl='ja-JP', tz=360)  # hl : 接続言語 , tz : タイムゾーン
 
-
+import os
+print('現在地:{}'.format(os.getcwd()))
 
 # 関連KW取得
 kw = [input('input kw: ')]
@@ -18,4 +19,4 @@ k = ''.join(kw)
 
 import datetime
 now = datetime.datetime.now()
-df.to_csv('dev/'+ k + '_' + now.strftime('%Y%m%d_%H%M%S') + '.csv')
+df.to_csv(k + '_' + now.strftime('%Y%m%d_%H%M%S') + '.csv')

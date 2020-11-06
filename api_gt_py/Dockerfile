@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.9.0-slim
 USER root
 SHELL ["/bin/bash", "-c"]
 WORKDIR /root/dev
